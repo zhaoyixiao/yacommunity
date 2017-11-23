@@ -2,7 +2,7 @@
  * 应用程序的启动入口文件
  */
 
-//加载express模块11
+//加载express模块
 var express = require('express');
 
 //加载模板处理模块
@@ -10,6 +10,7 @@ var swig = require('swig');
 
 //创建app应用  == NodeJs Http.createServer();
 var app = express();
+
 
 /**
  * 配置应用模板
@@ -31,6 +32,18 @@ app.set('view engine','html');
 //在开发过程中需要不停的调试页面文件，如果开启缓存在更新文件后就要重启服务
 swig.setDefaults({case:false});
 
+//设置静态文件托管
+//当访问的url以 /public开始，直接返回对应的__dirname + '/public' 目录下的文件
+app.use('/public',express.static(__dirname + '/public'));
+
+
+/**
+ * 根据不同的功能划分模块
+ */
+app.use('/admin',require('./routers/admin'));
+app.use('api',require('./routers/api'));
+app.use('/',require('./routers/main'));
+
 /**
  * 首页
  * req  request对象
@@ -38,18 +51,27 @@ swig.setDefaults({case:false});
  * next 函数
  *
  */
-app.get('/',function (req, res, next) {
+/*app.get('/',function (req, res, next) {
     //res.send('<h1>欢迎光临我的博客</h1>');
-    /**
+    /!**
      * 读取views目录下的指定文件，解析并返回给客户端
      * 参数1：表示模板的文件，相当于views目录  views/index.html
      * 参数2：传递给模板使用的数据
-     */
+     *!/
     res.render('index');
 
-});
+});*/
+
+//设置样式路由  在index.html中<link rel="stylesheet" href="/main.css">
+/*app.get('/main.css',function (req,res,next) {
+    res.setHeader('Content-type','text/css');
+    res.send('body {background : red;}');
+});*/
 
 
 //监听http请求
 app.listen('8090');
 
+/**
+ *
+ */
