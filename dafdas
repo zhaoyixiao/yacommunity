@@ -1,0 +1,89 @@
+[1mdiff --git a/.idea/workspace.xml b/.idea/workspace.xml[m
+[1mindex 3a5892b..b12b503 100644[m
+[1m--- a/.idea/workspace.xml[m
+[1m+++ b/.idea/workspace.xml[m
+[36m@@ -17,8 +17,8 @@[m
+       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">[m
+         <entry file="file://$PROJECT_DIR$/app.js">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state relative-caret-position="209">[m
+[31m-              <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />[m
+[32m+[m[32m            <state relative-caret-position="399">[m
+[32m+[m[32m              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />[m
+               <folding />[m
+             </state>[m
+           </provider>[m
+[36m@@ -44,12 +44,15 @@[m
+       </list>[m
+     </option>[m
+   </component>[m
+[32m+[m[32m  <component name="Git.Settings">[m
+[32m+[m[32m    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />[m
+[32m+[m[32m  </component>[m
+   <component name="IdeDocumentHistory">[m
+     <option name="CHANGED_PATHS">[m
+       <list>[m
+         <option value="$PROJECT_DIR$/package.json" />[m
+[31m-        <option value="$PROJECT_DIR$/app.js" />[m
+         <option value="$PROJECT_DIR$/views/index.html" />[m
+[32m+[m[32m        <option value="$PROJECT_DIR$/app.js" />[m
+       </list>[m
+     </option>[m
+   </component>[m
+[36m@@ -62,12 +65,13 @@[m
+   <component name="NodeModulesDirectoryManager">[m
+     <handled-path value="$PROJECT_DIR$/node_modules" />[m
+   </component>[m
+[31m-  <component name="ProjectFrameBounds" extendedState="1">[m
+[31m-    <option name="x" value="-203" />[m
+[31m-    <option name="y" value="107" />[m
+[32m+[m[32m  <component name="ProjectFrameBounds" extendedState="6">[m
+[32m+[m[32m    <option name="x" value="66" />[m
+[32m+[m[32m    <option name="y" value="64" />[m
+     <option name="width" value="1346" />[m
+     <option name="height" value="688" />[m
+   </component>[m
+[32m+[m[32m  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />[m
+   <component name="ProjectView">[m
+     <navigator currentView="ProjectPane" proportions="" version="1">[m
+       <flattenPackages />[m
+[36m@@ -145,21 +149,21 @@[m
+       <workItem from="1511355677263" duration="3877000" />[m
+       <workItem from="1511405725609" duration="3056000" />[m
+       <workItem from="1511415438210" duration="814000" />[m
+[31m-      <workItem from="1511416684087" duration="226000" />[m
+[32m+[m[32m      <workItem from="1511416684087" duration="806000" />[m
+     </task>[m
+     <servers />[m
+   </component>[m
+   <component name="TimeTrackingManager">[m
+[31m-    <option name="totallyTimeSpent" value="7973000" />[m
+[32m+[m[32m    <option name="totallyTimeSpent" value="8553000" />[m
+   </component>[m
+   <component name="ToolWindowManager">[m
+[31m-    <frame x="-203" y="107" width="1346" height="688" extended-state="1" />[m
+[32m+[m[32m    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />[m
+     <editor active="true" />[m
+     <layout>[m
+[31m-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17431192" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />[m
+[32m+[m[32m      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16964285" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />[m
+       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />[m
+[31m-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35457516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />[m
+[36m@@ -258,8 +262,8 @@[m
+     </entry>[m
+     <entry file="file://$PROJECT_DIR$/app.js">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="209">[m
+[31m-          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />[m
+[32m+[m[32m        <state relative-caret-position="399">[m
+[32m+[m[32m          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />[m
+           <folding />[m
+         </state>[m
+       </provider>[m
+warning: LF will be replaced by CRLF in .idea/workspace.xml.
+The file will have its original line endings in your working directory.
