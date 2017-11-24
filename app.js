@@ -8,6 +8,9 @@ var express = require('express');
 //加载模板处理模块
 var swig = require('swig');
 
+//加载mongoose数据库模块
+var mongoose = require('mongoose');
+
 //创建app应用  == NodeJs Http.createServer();
 var app = express();
 
@@ -42,7 +45,10 @@ app.use('/public',express.static(__dirname + '/public'));
  */
 app.use('/admin',require('./routers/admin'));
 app.use('api',require('./routers/api'));
-app.use('/',require('./routers/main'));
+/*app.use('/',require('./routers/main'));*/
+
+mongoose.connect();
+
 
 /**
  * 首页
